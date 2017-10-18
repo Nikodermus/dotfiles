@@ -1,0 +1,35 @@
+{
+	"window.nativeTabs": true,
+	"terminal.integrated.fontSize": 14,
+	"terminal.integrated.setLocaleVariables": true,
+	"editor.fontFamily": "'Inconsolata-g', Monaco, 'Courier New', monospace",
+	"editor.lineHeight": 21,
+	"terminal.integrated.fontFamily": "Menlo,'Inconsolata-g','Courier New', monospace",
+	"files.associations": {
+		"*.thor": "ruby"
+	},
+	"workbench.iconTheme": "vscode-icons",
+	"editor.minimap.enabled": false,
+	"php.suggest.basic": false,
+	"window.zoomLevel": 0,
+	"editor.fontSize": 12,
+	"editor.insertSpaces": false,
+	"editor.formatOnSave": true,
+	"files.autoSave": "onWindowChange",
+	"languageStylus.useSeparator": false,
+	"editor.wordWrap": "on",
+	"beautify.language": {
+		"html": [
+			"htm",
+			"html",
+			"php",
+			"html.erb"
+		]
+	},
+	"git.confirmSync": false,
+	"git.enableSmartCommit": true,
+	"editor.renderIndentGuides": false,
+	"vsicons.dontShowNewVersionMessage": true,
+	"typescript.check.npmIsInstalled": false,
+	"editor.detectIndentation": false
+}
