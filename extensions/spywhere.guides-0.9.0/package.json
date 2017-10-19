@@ -1,0 +1,292 @@
+{
+	"name": "guides",
+	"displayName": "Guides",
+	"description": "An extension for more guide lines",
+	"version": "0.9.0",
+	"publisher": "spywhere",
+	"icon": "images/icon.png",
+	"bugs": {
+		"url": "https://github.com/spywhere/vscode-guides/issues"
+	},
+	"homepage": "https://github.com/spywhere/vscode-guides/blob/master/README.md",
+	"keywords": [
+		"indentation",
+		"guides",
+		"indentation guides",
+		"ruler"
+	],
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/spywhere/vscode-guides.git"
+	},
+	"engines": {
+		"vscode": "^1.9.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Guides Configurations",
+			"properties": {
+				"guides.enabled": {
+					"type": "boolean",
+					"default": true,
+					"description": "Enable the extension.",
+					"enum": [
+						true,
+						false
+					]
+				},
+				"guides.limit.maximum": {
+					"type": "number",
+					"default": 500,
+					"description": "Maximum rendering boundary based on current cursor position. Set to -1 for no limit. Use floating point between 0-1 to determine from document size instead.",
+					"minimum": -1
+				},
+				"guides.indent.backgrounds": {
+					"type": "array",
+					"default": [],
+					"items": {
+						"type": "string",
+						"pattern": "rgba\\s*\\(\\s*\\d+\\s*,\\s*\\d+\\s*,\\s*\\d+\\s*,\\s*(\\d(\\.\\d+)?|\\.\\d+)\\s*\\)"
+					},
+					"description": "Indentation background colors."
+				},
+				"guides.indent.hideBackgroundOnSelection": {
+					"type": "boolean",
+					"default": true,
+					"description": "Hide indentation background in selections.",
+					"enum": [
+						true,
+						false
+					]
+				},
+				"guides.indent.showFirstIndentGuides": {
+					"type": "boolean",
+					"default": true,
+					"description": "Show start-of-line indentation guides.",
+					"enum": [
+						true,
+						false
+					]
+				},
+				"guides.normal.enabled": {
+					"type": "boolean",
+					"default": true,
+					"description": "Enable normal indentation guides.",
+					"enum": [
+						true,
+						false
+					]
+				},
+				"guides.normal.width": {
+					"type": "number",
+					"default": 1,
+					"description": "Normal indentation guides rendering width."
+				},
+				"guides.normal.color.dark": {
+					"type": "string",
+					"default": "rgba(60, 60, 60, 0.75)",
+					"description": "Normal indentation guides rendering color for dark themes."
+				},
+				"guides.normal.color.light": {
+					"type": "string",
+					"default": "rgba(220, 220, 220, 0.75)",
+					"description": "Normal indentation guides rendering color for light themes."
+				},
+				"guides.normal.style": {
+					"type": "string",
+					"default": "solid",
+					"description": "Normal indentation guides rendering style.",
+					"enum": [
+						"none",
+						"dotted",
+						"dashed",
+						"solid",
+						"double",
+						"groove",
+						"ridge",
+						"inset",
+						"outset"
+					]
+				},
+				"guides.normal.hideOnSelection": {
+					"type": "boolean",
+					"default": true,
+					"description": "Hide normal indentation guides in selections.",
+					"enum": [
+						true,
+						false
+					]
+				},
+				"guides.active.gutter": {
+					"type": "boolean",
+					"default": false,
+					"description": "Enable active indentation region indicator in the gutter area in addition to normal indentation guides.",
+					"enum": [
+						true,
+						false
+					]
+				},
+				"guides.active.enabled": {
+					"type": "boolean",
+					"default": true,
+					"description": "Enable active indentation guides in addition to normal indentation guides.",
+					"enum": [
+						true,
+						false
+					]
+				},
+				"guides.active.expandBrackets": {
+					"type": "boolean",
+					"default": true,
+					"description": "Expand active indentation guides on the bracket's line.",
+					"enum": [
+						true,
+						false
+					]
+				},
+				"guides.active.width": {
+					"type": "number",
+					"default": 1,
+					"description": "Active indentation guides rendering width."
+				},
+				"guides.active.color.dark": {
+					"type": "string",
+					"default": "rgba(120, 60, 60, 0.75)",
+					"description": "Active indentation guides rendering color for dark themes."
+				},
+				"guides.active.color.light": {
+					"type": "string",
+					"default": "rgba(200, 100, 100, 0.75)",
+					"description": "Active indentation guides rendering color for light themes."
+				},
+				"guides.active.style": {
+					"type": "string",
+					"default": "solid",
+					"description": "Active indentation guides rendering style.",
+					"enum": [
+						"none",
+						"dotted",
+						"dashed",
+						"solid",
+						"double",
+						"groove",
+						"ridge",
+						"inset",
+						"outset"
+					]
+				},
+				"guides.active.hideOnSelection": {
+					"type": "boolean",
+					"default": true,
+					"description": "Hide active indentation guides in selections.",
+					"enum": [
+						true,
+						false
+					]
+				},
+				"guides.active.extraIndent": {
+					"type": "boolean",
+					"default": false,
+					"description": "Shift active indentations by a level. This will also render an extra indentation guide.",
+					"enum": [
+						true,
+						false
+					]
+				},
+				"guides.stack.enabled": {
+					"type": "boolean",
+					"default": true,
+					"description": "Enable stack indentation guides in addition to normal indentation guides.",
+					"enum": [
+						true,
+						false
+					]
+				},
+				"guides.stack.width": {
+					"type": "number",
+					"default": 1,
+					"description": "Stack indentation guides rendering width."
+				},
+				"guides.stack.color.dark": {
+					"type": "string",
+					"default": "rgba(80, 80, 80, 0.75)",
+					"description": "Stack indentation guides rendering color for dark themes."
+				},
+				"guides.stack.color.light": {
+					"type": "string",
+					"default": "rgba(180, 180, 180, 0.75)",
+					"description": "Stack indentation guides rendering color for light themes."
+				},
+				"guides.stack.style": {
+					"type": "string",
+					"default": "solid",
+					"description": "Stack indentation guides rendering style.",
+					"enum": [
+						"none",
+						"dotted",
+						"dashed",
+						"solid",
+						"double",
+						"groove",
+						"ridge",
+						"inset",
+						"outset"
+					]
+				},
+				"guides.stack.hideOnSelection": {
+					"type": "boolean",
+					"default": true,
+					"description": "Hide stack indentation guides in selections.",
+					"enum": [
+						true,
+						false
+					]
+				},
+				"guides.updateDelay": {
+					"type": "number",
+					"default": 0.1,
+					"description": "Time duration between each guide lines update (in seconds).",
+					"minimum": 0.01
+				},
+				"guides.overrideDefault": {
+					"type": "boolean",
+					"default": false,
+					"description": "Override default Visual Studio Code behaviours (such as indentation guides or rulers)."
+				},
+				"guides.sendUsagesAndStats": {
+					"type": "boolean",
+					"default": true,
+					"description": "Send anonymous usage statistics data to the developer."
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"devDependencies": {
+		"@types/node": "^6.0.40",
+		"@types/request": "^0.0.39",
+		"typescript": "^2.0.3",
+		"vscode": "^1.0.0"
+	},
+	"dependencies": {
+		"request": "^2.72.0"
+	},
+	"__metadata": {
+		"id": "38ad8277-d23f-4cfc-becf-c77e41c3f2ee",
+		"publisherId": "a5361b58-6751-40c0-99c8-ade4827e6ece",
+		"publisherDisplayName": "spywhere"
+	}
+}

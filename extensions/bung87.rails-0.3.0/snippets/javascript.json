@@ -1,0 +1,32 @@
+{
+	 "ruby-expression":{
+		 "prefix":"<%",
+		 "body":[
+			 "<%$1 %>"],
+		 "description": "ruby expression"
+	 },
+    "escape_javascript":{
+		"prefix": "escape_j",
+		"body": [
+			"<%= escape_javascript (${content}) %>"
+		],
+		"description": "rails escape_javascript"
+	},
+	"begin":{
+		"prefix": "=begin",
+		"body": [
+			"<%\n=begin %>",
+
+			"$1",
+			"<%\n=end %>"
+		],
+		"description": "rails comment"
+	},
+    "j":{
+		"prefix": "jrender",
+		"body": [
+			"<%= j( render :partial => '${partial_path}' ) %>"
+		],
+		"description": "rails <%= j( render :partial => '${partial_path}' ) %>"
+	}
+}

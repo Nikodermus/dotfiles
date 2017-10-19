@@ -1,0 +1,139 @@
+{
+	"name": "rails",
+	"displayName": "rails",
+	"description": "Ruby on Rails \"Asset Helpers\" and \"Tag Helpers\" snippets.",
+	"version": "0.3.0",
+	"publisher": "bung87",
+	"icon": "rails.png",
+	"engines": {
+		"vscode": "^1.5.0"
+	},
+	"galleryBanner": {
+		"color": "#c52f24",
+		"theme": "dark"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bung87/vscode-rails.git"
+	},
+	"homepage": "https://github.com/bung87/vscode-rails",
+	"license": "SEE LICENSE IN LICENSE.md",
+	"bugs": {
+		"url": "https://github.com/bung87/vscode-rails/issues"
+	},
+	"categories": [
+		"Languages",
+		"Snippets",
+		"Other"
+	],
+	"keywords": [
+		"rails",
+		"ROR",
+		"Ruby on Rails",
+		".erb"
+	],
+	"activationEvents": [
+		"onCommand:rails-nav"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "rails-nav",
+				"title": "Rails Nav"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "rails-nav",
+				"key": "Alt+."
+			}
+		],
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/javascript.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/html.json"
+			},
+			{
+				"language": "css",
+				"path": "./snippets/css.json"
+			},
+			{
+				"language": "scss",
+				"path": "./snippets/scss.json"
+			},
+			{
+				"language": "ruby",
+				"path": "./snippets/ruby.json"
+			}
+		],
+		"languages": [
+			{
+				"id": "html",
+				"aliases": [
+					"html.erb"
+				],
+				"extensions": [
+					".html.erb",
+					".rhtml",
+					".rhtm"
+				]
+			},
+			{
+				"id": "javascript",
+				"aliases": [
+					"js.erb"
+				],
+				"extensions": [
+					".js.erb"
+				]
+			},
+			{
+				"id": "css",
+				"aliases": [
+					"css.erb"
+				],
+				"extensions": [
+					".css.erb"
+				]
+			},
+			{
+				"id": "scss",
+				"extensions": [
+					".scss"
+				]
+			}
+		],
+		"grammars": [
+			{
+				"language": "html",
+				"scopeName": "text.html.erb",
+				"path": "./syntaxes/erb.tmLanguage"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"devDependencies": {
+		"typescript": "^2.0.3",
+		"vscode": "^1.0.0",
+		"mocha": "^2.3.3",
+		"@types/node": "^6.0.40",
+		"@types/mocha": "^2.2.32"
+	},
+	"dependencies": {
+		"inflection": "^1.10.0"
+	},
+	"__metadata": {
+		"id": "61048194-bd70-4abb-b039-d796bf6be01c",
+		"publisherId": "dc9ef235-7858-406c-bf43-8902f94b0a63",
+		"publisherDisplayName": "周鹏"
+	}
+}
