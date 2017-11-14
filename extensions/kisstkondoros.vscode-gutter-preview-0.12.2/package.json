@@ -1,0 +1,82 @@
+{
+	"name": "vscode-gutter-preview",
+	"private": true,
+	"description": "Shows image preview in the gutter and on hover",
+	"author": "Tamas Kiss",
+	"publisher": "kisstkondoros",
+	"license": "MIT",
+	"version": "0.12.2",
+	"displayName": "Image preview",
+	"icon": "images/logo.png",
+	"engines": {
+		"vscode": "^1.15.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kisstkondoros/gutter-preview.git"
+	},
+	"keywords": [
+		"vscode",
+		"image",
+		"preview"
+	],
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:stylable",
+		"onLanguage:stylus",
+		"onLanguage:css",
+		"onLanguage:less",
+		"onLanguage:scss",
+		"onLanguage:html",
+		"onLanguage:markdown",
+		"onLanguage:python"
+	],
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Image Preview configuration",
+			"properties": {
+				"gutterpreview.sourcefolder": {
+					"default": "src",
+					"description": "Additional folder to consider when resolving relative urls",
+					"type": "string"
+				},
+				"gutterpreview.showimagepreviewongutter": {
+					"default": true,
+					"description": "A flag which indicates wether the image preview should be shown on the gutter",
+					"type": "boolean"
+				}
+			}
+		}
+	},
+	"main": "./out/src/extension",
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"devDependencies": {
+		"@types/node": "^8.0.49",
+		"@types/tmp": "0.0.33",
+		"grunt": "^1.0.1",
+		"grunt-cli": "^1.2.0",
+		"grunt-contrib-clean": "^1.0.0",
+		"grunt-shell": "^1.2.1",
+		"load-grunt-config": "^0.19.1",
+		"typescript": "^2.3.2",
+		"vscode": "^1.0.0"
+	},
+	"dependencies": {
+		"base64-img": "^1.0.3",
+		"probe-image-size": "^3.0.0",
+		"request": "^2.83.0",
+		"tmp": "0.0.33"
+	},
+	"__metadata": {
+		"id": "eedfd044-d5ac-4389-973d-3ac1fdb98ad5",
+		"publisherId": "87e3e2a4-ac17-425a-a4b6-698bc44254fe",
+		"publisherDisplayName": "Kiss Tamás"
+	}
+}

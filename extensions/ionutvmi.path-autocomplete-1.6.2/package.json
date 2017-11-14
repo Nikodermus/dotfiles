@@ -1,0 +1,85 @@
+{
+	"name": "path-autocomplete",
+	"displayName": "Path Autocomplete",
+	"description": "Provides path completion for visual studio code.",
+	"version": "1.6.2",
+	"publisher": "ionutvmi",
+	"icon": "icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ionutvmi/path-autocomplete"
+	},
+	"bugs": {
+		"url": "https://github.com/ionutvmi/path-autocomplete/issues",
+		"email": "ionutvmi@gmail.com"
+	},
+	"engines": {
+		"vscode": "^1.5.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "path-autocomplete",
+			"properties": {
+				"path-autocomplete.extensionOnImport": {
+					"type": "boolean",
+					"default": false,
+					"description": "Adds the file extension to a import statements"
+				},
+				"path-autocomplete.excludedItems": {
+					"type": "object",
+					"default": {},
+					"description": "Allows you to exclude certain files from the suggestions"
+				},
+				"path-autocomplete.pathMappings": {
+					"type": "object",
+					"default": {},
+					"description": "Defines custom mappings for the autocomplete paths."
+				},
+				"path-autocomplete.transformations": {
+					"type": "array",
+					"default": [],
+					"description": "Custom transformations applied to the inserted text."
+				},
+				"path-autocomplete.triggerOutsideStrings": {
+					"type": "boolean",
+					"default": false,
+					"description": "Enables path autocompletion outside strings."
+				},
+				"path-autocomplete.enableFolderTrailingSlash": {
+					"type": "boolean",
+					"default": true,
+					"description": "Enables the trailing slash on the folder path insertion."
+				}
+			}
+		}
+	},
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/src/extension",
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/mocha": "2.2.41",
+		"@types/node": "8.0.24",
+		"mocha": "3.5.0",
+		"typescript": "2.4.2",
+		"vscode": "1.1.4"
+	},
+	"dependencies": {
+		"minimatch": "3.0.3"
+	},
+	"__metadata": {
+		"id": "0d1241e3-fa60-4f24-8f2a-6d7085677c48",
+		"publisherId": "3a1bd914-dacc-4903-89d9-bd7ff757eb7f",
+		"publisherDisplayName": "Mihai Vilcu"
+	}
+}

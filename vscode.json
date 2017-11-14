@@ -1,10 +1,19 @@
 {
+	"search.useIgnoreFiles": true,
+	"ruby.lint": {
+		//"reek": true,
+		// "rubocop": true,
+		"ruby": true
+		// "fasterer": true,
+		// "debride": true,
+		//"ruby-lint": true
+	},
 	"window.nativeTabs": true,
-	"terminal.integrated.fontSize": 14,
+	"terminal.integrated.fontSize": 13,
 	"terminal.integrated.setLocaleVariables": true,
 	"editor.fontFamily": "'Inconsolata-g', Monaco, 'Courier New', monospace",
 	"editor.lineHeight": 21,
-	"terminal.integrated.fontFamily": "Menlo,'Inconsolata-g','Courier New', monospace",
+	"terminal.integrated.fontFamily": "Menlo,'Inconsolata for Powerline','Courier New', monospace",
 	"files.associations": {
 		"*.thor": "ruby"
 	},
@@ -31,5 +40,7 @@
 	"editor.renderIndentGuides": false,
 	"vsicons.dontShowNewVersionMessage": true,
 	"typescript.check.npmIsInstalled": false,
-	"editor.detectIndentation": false
+	"editor.detectIndentation": false,
+	"explorer.confirmDelete": false,
+	"workbench.panel.location": "bottom"
 }
