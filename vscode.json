@@ -6,9 +6,6 @@
 	"editor.letterSpacing": 0.5,
 	"files.trimTrailingWhitespace": true,
 	"editor.fontWeight": "400",
-	"vscode_custom_css.imports": [
-		"/Users/nikodermus/.vscode_me.css"
-	],
 	"editor.renderWhitespace": "all",
 	"search.useIgnoreFiles": true,
 	"ruby.lint": {
@@ -40,8 +37,10 @@
 			"htm",
 			"html",
 			"php",
-			"html.erb"
-		]
+			"html.erb",
+			"vue"
+		],
+		"css": ["css"]
 	},
 	"git.confirmSync": false,
 	"git.enableSmartCommit": true,
@@ -53,19 +52,19 @@
 	"workbench.panel.location": "bottom",
 	"materialTheme.cache.workbench.settings": {
 		"themeColours": "Darker High Contrast",
-		"accent": "Tomato",
+		"accent": "Purple",
 		"accentPrevious": "Graphite"
 	},
 	"workbench.colorCustomizations": {
-		"activityBarBadge.background": "#F44336",
-		"list.activeSelectionForeground": "#F44336",
-		"list.inactiveSelectionForeground": "#F44336",
-		"list.highlightForeground": "#F44336",
-		"scrollbarSlider.activeBackground": "#F4433650",
-		"editorSuggestWidget.highlightForeground": "#F44336",
-		"textLink.foreground": "#F44336",
-		"progressBar.background": "#F44336",
-		"pickerGroup.foreground": "#F44336",
-		"tab.activeBorder": "#F44336"
+		"activityBarBadge.background": "#AB47BC",
+		"list.activeSelectionForeground": "#AB47BC",
+		"list.inactiveSelectionForeground": "#AB47BC",
+		"list.highlightForeground": "#AB47BC",
+		"scrollbarSlider.activeBackground": "#AB47BC50",
+		"editorSuggestWidget.highlightForeground": "#AB47BC",
+		"textLink.foreground": "#AB47BC",
+		"progressBar.background": "#AB47BC",
+		"pickerGroup.foreground": "#AB47BC",
+		"tab.activeBorder": "#AB47BC"
 	}
 }
