@@ -1,0 +1,68 @@
+{
+	"name": "javascript-typescript",
+	"displayName": "JavaScript and TypeScript IntelliSense",
+	"description": "JavaScript and TypeScript IntelliSense through the Language Server Protocol",
+	"publisher": "sourcegraph",
+	"author": "Sourcegraph",
+	"license": "ISC",
+	"private": true,
+	"preview": true,
+	"version": "0.0.5",
+	"engines": {
+		"vscode": "^1.15.0"
+	},
+	"keywords": [
+		"typescript",
+		"javascript",
+		"intellisense",
+		"autocompletion",
+		"refactor"
+	],
+	"categories": [
+		"Languages"
+	],
+	"icon": "images/logo.png",
+	"galleryBanner": {
+		"color": "#294E80",
+		"theme": "dark"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sourcegraph/javascript-typescript-langserver.git"
+	},
+	"bugs": {
+		"url": "https://github.com/sourcegraph/javascript-typescript-langserver/issues"
+	},
+	"activationEvents": [
+		"onLanguage:typescript",
+		"onLanguage:javascript",
+		"onLanguage:typescriptreact",
+		"onLanguage:javascriptreact"
+	],
+	"main": "./out/extension",
+	"scripts": {
+		"build": "tsc -p .",
+		"watch": "tsc -w -p .",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"lint": "tslint -c tslint.json \"src/**/*.ts\""
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.42",
+		"@types/mz": "0.0.31",
+		"@types/node": "^7.0.31",
+		"@types/semver": "^5.4.0",
+		"tslint": "^5.0.0",
+		"typescript": "^2.1.4",
+		"vsce": "^1.8.1",
+		"vscode": "^1.0.0"
+	},
+	"dependencies": {
+		"javascript-typescript-langserver": "^2.4.0",
+		"vscode-languageclient": "^3.0.3"
+	},
+	"__metadata": {
+		"id": "2952daa0-b28c-4d0c-8a8d-78b73da7f5fe",
+		"publisherId": "755cb281-9734-491c-866f-4facd1750385",
+		"publisherDisplayName": "Sourcegraph"
+	}
+}

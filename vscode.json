@@ -1,5 +1,9 @@
 {
+	"emmet.showAbbreviationSuggestions": false,
 	"workbench.colorTheme": "Material Theme",
+	"emmet.includeLanguages": {
+		"javascript": "html"
+	},
 	"editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
 	"editor.fontSize": 12,
 	"editor.lineHeight": 22,
@@ -16,12 +20,13 @@
 		// "debride": true,
 		//"ruby-lint": true
 	},
-	"window.nativeTabs": true,
+	"window.nativeTabs": false,
 	"terminal.integrated.fontSize": 13,
 	"terminal.integrated.setLocaleVariables": true,
 	"terminal.integrated.fontFamily": "Menlo,'Inconsolata for Powerline','Courier New', monospace",
 	"files.associations": {
-		"*.thor": "ruby"
+		"*.thor": "ruby",
+		"*.js": "javascript"
 	},
 	"workbench.iconTheme": "vscode-icons",
 	"editor.minimap.enabled": false,
@@ -40,7 +45,9 @@
 			"html.erb",
 			"vue"
 		],
-		"css": ["css"]
+		"css": [
+			"css"
+		]
 	},
 	"git.confirmSync": false,
 	"git.enableSmartCommit": true,
@@ -66,5 +73,29 @@
 		"progressBar.background": "#AB47BC",
 		"pickerGroup.foreground": "#AB47BC",
 		"tab.activeBorder": "#AB47BC"
-	}
+	},
+	"workbench.startupEditor": "newUntitledFile",
+	"explorer.confirmDragAndDrop": false,
+	"vsicons.projectDetection.autoReload": true,
+	"typescript.format.insertSpaceBeforeFunctionParenthesis": false,
+	"javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+	"eslint.enable": true,
+	"eslint.options": {
+		"extensions": [
+			".html",
+			".js",
+			".vue",
+			".jsx"
+		]
+	},
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		{
+			"language": "html",
+			"autoFix": true
+		}
+	],
+	"eslint.run": "onSave",
+	"eslint.autoFixOnSave": true,
 }

@@ -1,0 +1,5 @@
+# JavaScript and TypeScript IntelliSense
+
+[![Latest Release](https://vsmarketplacebadge.apphb.com/version-short/sourcegraph.javascript-typescript.svg)](https://marketplace.visualstudio.com/items?itemName=sourcegraph.javascript-typescript) [![Installs](https://vsmarketplacebadge.apphb.com/installs/sourcegraph.javascript-typescript.svg)](https://marketplace.visualstudio.com/items?itemName=sourcegraph.javascript-typescript) [![Rating](https://vsmarketplacebadge.apphb.com/rating-short/sourcegraph.javascript-typescript.svg)](https://marketplace.visualstudio.com/items?itemName=sourcegraph.javascript-typescript) [![Build Status](https://travis-ci.org/sourcegraph/vscode-javascript-typescript.svg?branch=master)](https://travis-ci.org/sourcegraph/vscode-javascript-typescript) ![Dependency Status](https://david-dm.org/sourcegraph/vscode-javascript-typescript.svg)
+
+JavaScript/TypeScript IntelliSense through the [JavaScript/TypeScript Language Server](https://github.com/sourcegraph/javascript-typescript-langserver)

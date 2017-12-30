@@ -1,3 +1,0 @@
-src/**/*.* filter=git-crypt diff=git-crypt
-.gulp/**/*.* filter=git-crypt diff=git-crypt
-extensions/**/*.ts

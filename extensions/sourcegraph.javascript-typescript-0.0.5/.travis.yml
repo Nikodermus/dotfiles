@@ -1,0 +1,23 @@
+language: node_js
+
+node_js:
+  - 7
+
+script:
+  - npm run lint
+  - npm run build
+
+before_deploy:
+  - vsce package
+  - vsce publish -p $VSCE_TOKEN
+
+deploy:
+  provider: releases
+  skip_cleanup: true
+  api_key:
+    secure: fKw7L/wPlp45+kXJTOhWpqlq+RaFPACHdNML9R/I+zoTrsO/BOd/8SvtTtlWQMNgYrVk5buYRiLwAjIwBXGRwyqmF64J7oBLCHM9/074XjA/h3TZh+zbqBR+6swqr3R1u2P6E5w6wBztYltrB44UpzekoS3utavvsGDxVPDarlKFEDeSE+YzU6KmKn5UAtN3o898fvKybqmYfxHr7GQrn0Kpi7tRZVgakPQOIDMPAiJvFDFiiZXoGjZBF8aSwId0oXNCP4o7DfZOsaGwUMdoRgwmycj/ufPP3jdPwuvyHik4J1Gez8rVaU23EykreL7TM1GGr+CETI55VoteCKFVa59rPaxTJUDpsKAXQrV0ho/mzgcYN0K7Lpd8m8jb1CoEEahJrTZLnT6SraMn7Ab+iG8kjy2N7ggwQ7YVsNJ6aINh5EqqoTq/kp4/x8lajAz5t+HYEtL+I2k6KiEaoZ51GkuT5j37zNASnFFGIeQZPyXo3qM/7At5SaqBMlflqP68+BQZL98upSSW3btJ9IgMDU3VXjZBJ+PZa5JYQk4HlVe+qtx9nBcPn3MDDUytHRafP1yPJyLl2bLAwcQLMpgGXCVk2s/K30AQcCIunVI++JoXXpOEY+xxzRLLOVOZuZHYkmprzolzuUYkthvJC7BqOZPLX2nsB3q5hLn01CJ04bA=
+  file: javascript-typescript-*.vsix
+  file_glob: true
+  on:
+    repo: sourcegraph/vscode-javascript-typescript
+    tags: true
