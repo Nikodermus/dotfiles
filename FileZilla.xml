@@ -107,6 +107,27 @@
 			<DirectoryComparison>0</DirectoryComparison>
 		</Server>
 		<Server>
+			<Host>ftp.dakio.co</Host>
+			<Port>21</Port>
+			<Protocol>0</Protocol>
+			<Type>0</Type>
+			<User>eva@dakio.co</User>
+			<Pass encoding="base64">Zy5efUtrQC4zXmt0</Pass>
+			<Logontype>1</Logontype>
+			<TimezoneOffset>0</TimezoneOffset>
+			<PasvMode>MODE_DEFAULT</PasvMode>
+			<MaximumMultipleConnections>0</MaximumMultipleConnections>
+			<EncodingType>Auto</EncodingType>
+			<BypassProxy>0</BypassProxy>
+			<Name>eva.plus</Name>
+			<Comments />
+			<Colour>0</Colour>
+			<LocalDir />
+			<RemoteDir />
+			<SyncBrowsing>0</SyncBrowsing>
+			<DirectoryComparison>0</DirectoryComparison>
+		</Server>
+		<Server>
 			<Host>ftp.folies.co</Host>
 			<Port>21</Port>
 			<Protocol>0</Protocol>
@@ -226,15 +247,38 @@
 		<Setting name="Auto Ascii no extension">1</Setting>
 		<Setting name="Auto Ascii dotfiles">1</Setting>
 		<Setting name="Language Code" />
-		<Setting name="Last Server Path">1 0 11 public_html 25 utahtaxresolutionpros.com 18 independentreviews</Setting>
+		<Setting name="Last Server Path">1 0</Setting>
 		<Setting name="Concurrent download limit">0</Setting>
 		<Setting name="Concurrent upload limit">0</Setting>
 		<Setting name="Update Check">1</Setting>
 		<Setting name="Update Check Interval">7</Setting>
-		<Setting name="Last automatic update check">2017-10-17 22:06:15</Setting>
+		<Setting name="Last automatic update check">2018-01-18 20:11:10</Setting>
 		<Setting name="Last automatic update version">3.27.1</Setting>
-		<Setting name="Update Check New Version">nightly 2017-10-03 http://filezilla-project.org/nightlies/2017-10-03/x86_64-apple-darwin13.4.0/FileZilla3.app.tar.bz2 10609187 sha512 e84f52317087f611fd7eb4801cf099966dfc2bb0304cb1a457faf04523771c4534700e1c97d3491d8945df64dc84bc581428ac74f08fe63ba7c73c2eb592acda 
-release 3.28.0 http://downloads.sourceforge.net/filezilla/FileZilla_3.28.0_macosx-x86.app.tar.bz2 10478869 sha512 a4b409bec7c90cc22df2ed1dabc3cb154a01f5d5ba1e7f745cb9eb3bab7367b23e48f5800f350b46b4bf1fccf7b5b5e333d6f86b0ab9d51e651b7ab84dc4333e
+		<Setting name="Update Check New Version">nightly 2018-01-18 http://filezilla-project.org/nightlies/2018-01-18/x86_64-apple-darwin13.4.0/FileZilla3.app.tar.bz2 10762494 sha512 1b179374aa788d6bc37f6ac5e9d0a33285d75d629392dbba1d7fdd0e6593e4839cc78ff1a2ce0ec6d8711aaf8b93a41ca7e8061f09a554f832c8ddb7a9ab97c6 
+release 3.30.0 http://downloads.sourceforge.net/filezilla/FileZilla_3.30.0_macosx-x86.app.tar.bz2 10567614 sha512 6f362f5978c39bf3c132ee77c257c1035a5514e12c22d90527553868be034f4aaa630c9b30c58199057462a618a9fcd5f0b0d67505fcfb277f11b13c0105f752
+
+3.30.0 (2018-01-08)
+
+- Add additional logging if autoupdate mechanism fails
+
+3.30.0-rc1 (2017-12-29)
+
++ In the search dialog local files can now be deleted or opened
++ The root node in the remote directory tree is now expanded by default
+- Fix uploading from search dialog
+- Fix formatting of filename in rename dialog
+- MSW: Fix installer crash if an update installation is started with the updated version having been installed
+
+3.29.0 (2017-11-06)
+
+- Fix activity indicators not working after the update check has been run
+
+3.29.0-rc1 (2017-10-31)
+
++ Added new quick search filter to file lists, accessed through Ctrl+F
++ FTP over TLS: Mismatched hostnames are now highlighted in red in the certificate verification dialog
++ Filters using regular expressions can now be case-insensitive
+- Explicitly wait for the settings to be written to disk before removing the backup file to prevent loss of data in case of system crashes
 
 3.28.0 (2017-09-29)
 
@@ -267,9 +311,9 @@ release 3.28.0 http://downloads.sourceforge.net/filezilla/FileZilla_3.28.0_macos
 		<Setting name="Queue successful autoclear">0</Setting>
 		<Setting name="Queue column widths">180 60 292 80 60 150</Setting>
 		<Setting name="Local filelist colwidths">193 80 100 120</Setting>
-		<Setting name="Remote filelist colwidths">198 25 80 100 80 80</Setting>
+		<Setting name="Remote filelist colwidths">198 25 80 139 80 80</Setting>
 		<Setting name="Window position and size">0 642 0 638 725 </Setting>
-		<Setting name="Splitter positions (v2)">97 -181 382445141 108 108 500000000</Setting>
+		<Setting name="Splitter positions (v2)">97 -181 382445141 146 108 500000000</Setting>
 		<Setting name="Local filelist sortorder">0 0</Setting>
 		<Setting name="Remote filelist sortorder">0 0</Setting>
 		<Setting name="Time Format">0</Setting>
@@ -286,7 +330,7 @@ release 3.28.0 http://downloads.sourceforge.net/filezilla/FileZilla_3.28.0_macos
 		<Setting name="Icon theme">default</Setting>
 		<Setting name="Icon scale">125</Setting>
 		<Setting name="Timestamp in message log">0</Setting>
-		<Setting name="Sitemanager last selected">0/phillipfostercpa.com</Setting>
+		<Setting name="Sitemanager last selected">0/NYR Dev</Setting>
 		<Setting name="Local filelist shown columns">1111</Setting>
 		<Setting name="Remote filelist shown columns">111111</Setting>
 		<Setting name="Local filelist column order">0,1,2,3</Setting>
@@ -295,7 +339,7 @@ release 3.28.0 http://downloads.sourceforge.net/filezilla/FileZilla_3.28.0_macos
 		<Setting name="Filter toggle state">0</Setting>
 		<Setting name="Show quickconnect bar">1</Setting>
 		<Setting name="Messagelog position">0</Setting>
-		<Setting name="Last connected site">0/phillipfostercpa.com</Setting>
+		<Setting name="Last connected site">0/NYR Dev</Setting>
 		<Setting name="File doubleclock action">0</Setting>
 		<Setting name="Dir doubleclock action">0</Setting>
 		<Setting name="Minimize to tray">0</Setting>
@@ -328,19 +372,20 @@ release 3.28.0 http://downloads.sourceforge.net/filezilla/FileZilla_3.28.0_macos
 		<Setting name="Disable update check">0</Setting>
 		<Setting name="Cache directory" />
 		<LastServer>
-			<Host>ftp.phillipfostercpa.com</Host>
+			<Host>ftp.dakio.co</Host>
 			<Port>21</Port>
 			<Protocol>0</Protocol>
 			<Type>0</Type>
-			<User>nikodermus</User>
-			<Pass encoding="base64">bWtHVCo2bndkdWZw</Pass>
+			<User>nyr@dakio.co</User>
+			<Pass encoding="base64">bGxSVE1MKztRdV0p</Pass>
 			<Logontype>1</Logontype>
 			<TimezoneOffset>0</TimezoneOffset>
 			<PasvMode>MODE_DEFAULT</PasvMode>
 			<MaximumMultipleConnections>0</MaximumMultipleConnections>
 			<EncodingType>Auto</EncodingType>
 			<BypassProxy>0</BypassProxy>
-			<Name>phillipfostercpa.com</Name>
+			<Name>NYR Dev</Name>
 		</LastServer>
 	</Settings>
+	<Queue />
 </FileZilla3>
