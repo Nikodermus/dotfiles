@@ -1,0 +1,8 @@
+* TODO fix currency_pair so it takes an options object
+* TODO implement letter()
+* TODO move timezone into proper place
+* TODO test timezone
+* TODO test timezones
+* TODO ensure full test coverage
+* TODO fix code coverage with nyc
+* TODO better lint rules

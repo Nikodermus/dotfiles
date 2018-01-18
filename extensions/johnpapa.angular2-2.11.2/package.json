@@ -1,0 +1,57 @@
+{
+	"name": "Angular2",
+	"publisher": "johnpapa",
+	"displayName": "Angular v5 Snippets",
+	"description": "Angular v5 snippets by John Papa",
+	"icon": "images/angular-shield.png",
+	"galleryBanner": {
+		"color": "#0273D4",
+		"theme": "dark"
+	},
+	"license": "SEE LICENSE IN LICENSE.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/johnpapa/vscode-angular-snippets.git"
+	},
+	"keywords": [
+		"Angular",
+		"Angular 2",
+		"Angular 5",
+		"TypeScript",
+		"HTML"
+	],
+	"version": "2.11.2",
+	"engines": {
+		"vscode": "^1.10.0"
+	},
+	"devDependencies": {
+		"vscode": "^1.11.0"
+	},
+	"categories": [
+		"Snippets",
+		"Other"
+	],
+	"contributes": {
+		"jsonValidation": [
+			{
+				"fileMatch": "manifest.json",
+				"url": "http://json.schemastore.org/web-manifest"
+			}
+		],
+		"snippets": [
+			{
+				"language": "typescript",
+				"path": "./snippets/typescript.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/html.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "214cbfb9-7c06-4467-bad4-357ae83eb587",
+		"publisherId": "4434843a-4ebf-4f44-84f5-4176380c492d",
+		"publisherDisplayName": "John Papa"
+	}
+}

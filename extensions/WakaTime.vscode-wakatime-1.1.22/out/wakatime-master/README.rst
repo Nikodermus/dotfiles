@@ -6,17 +6,13 @@
     :target: https://coveralls.io/github/wakatime/wakatime?branch=master
     :alt: Coverage
 
-.. image:: https://badge.fury.io/py/wakatime.svg
+.. image:: https://img.shields.io/pypi/v/wakatime.svg
     :target: https://pypi.python.org/pypi/wakatime
     :alt: Version
 
-.. image:: https://gemnasium.com/badges/github.com/wakatime/wakatime.svg
-    :target: https://gemnasium.com/github.com/wakatime/wakatime
-    :alt: Dependencies
-
-.. image:: https://wakaslack.herokuapp.com/badge.svg
-    :target: https://wakaslack.herokuapp.com
-    :alt: Slack
+.. image:: https://img.shields.io/pypi/pyversions/wakatime.svg
+    :target: https://pypi.python.org/pypi/wakatime
+    :alt: Supported Python Versions
 
 
 WakaTime
@@ -64,7 +60,7 @@ format. An example config file with all available options::
     [settings]
     debug = false
     api_key = your-api-key
-    hidefilenames = false
+    hide_filenames = false
     exclude =
         ^COMMIT_EDITMSG$
         ^TAG_EDITMSG$
@@ -72,6 +68,7 @@ format. An example config file with all available options::
         ^/etc/
     include =
         .*
+    only_include_with_project_file = false
     offline = true
     proxy = https://user:pass@localhost:8080
     no_ssl_verify = false
