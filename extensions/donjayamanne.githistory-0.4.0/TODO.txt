@@ -1,0 +1,8 @@
+Create archive:
+git archive --prefix=arc/ -o xxx.zip 7a719e685e2aca9cbc341d849769b8693568c739
+
+Add a tag:
+git tag -a -m  sssss 7a719e685e2aca9cbc341d849769b8693568c739
+
+Push tag up:
+git push -v up refs/tags/sssss

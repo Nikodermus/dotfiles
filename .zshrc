@@ -7,7 +7,7 @@ export ZSH=/Users/nikodermus/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="dieter"
+ZSH_THEME="nanotech"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -82,7 +82,12 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
- alias coz="git cz"
+alias coz="git cz"
+alias pushy='for i in `git remote`; do git push $i; done;'
+alias pully='for i in `git remote`; do git pull $i; done;'
+alias env2='/Users/nikodermus/Dropbox/Company/enVista/Shellscripts/enspire_v2.sh'
+alias env3='/Users/nikodermus/Dropbox/Company/enVista/Shellscripts/enspire_v3.sh'
+alias nodeapi='node /Users/nikodermus/Dropbox/Projects/bogotajs-proxies/04\ api_methods'
 
 
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh

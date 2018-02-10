@@ -1,4 +1,11 @@
 {
+  "workbench.fontAliasing": "auto",
+  "search.smartCase": true,
+  "problems.decorations.enabled": true,
+  "sassFormat.indent": 2,
+  "stylelint.enable": true,
+  "css.validate": false,
+  "scss.validate": false,
   "TodoParser": {
     "folderExclude": [
       "node_modules",
@@ -109,7 +116,8 @@
   "eslint.run": "onSave",
   "eslint.autoFixOnSave": true,
   "editor.tokenColorCustomizations": {
-    "textMateRules": [{
+    "textMateRules": [
+      {
         "settings": {
           "foreground": "#ffffffff",
         }
@@ -668,11 +676,14 @@
     "tab.activeBorder": "#FFA000"
   },
   "bracketPairColorizer.consecutivePairColors": [
-    "[]", [ // CSS Color cycle
+    "[]",
+    [ // CSS Color cycle
       "#aabff9",
       "#88a6f6",
       "#5680f3",
     ],
     "Red" // Orphaned bracket color
-  ]
+  ],
+  "diffEditor.ignoreTrimWhitespace": true,
+  "editor.multiCursorModifier": "ctrlCmd"
 }
