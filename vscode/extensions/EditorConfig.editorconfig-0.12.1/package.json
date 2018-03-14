@@ -1,0 +1,89 @@
+{
+	"name": "EditorConfig",
+	"displayName": "EditorConfig for VS Code",
+	"description": "EditorConfig Support for Visual Studio Code",
+	"publisher": "EditorConfig",
+	"version": "0.12.1",
+	"icon": "EditorConfig_icon.png",
+	"engines": {
+		"vscode": "^1.19.2"
+	},
+	"author": "EditorConfig Team",
+	"license": "MIT",
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"editor",
+		"config",
+		"multi-root ready"
+	],
+	"homepage": "https://github.com/editorconfig/editorconfig-vscode/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/editorconfig/editorconfig-vscode.git"
+	},
+	"bugs": {
+		"url": "https://github.com/editorconfig/editorconfig-vscode/issues"
+	},
+	"galleryBanner": {
+		"color": "#37699A",
+		"theme": "dark"
+	},
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/src/editorConfigMain",
+	"contributes": {
+		"commands": [
+			{
+				"command": "EditorConfig.generate",
+				"title": "Generate .editorconfig"
+			}
+		],
+		"menus": {
+			"commandPalette": [
+				{
+					"command": "EditorConfig.generate",
+					"when": "explorerResourceIsFolder"
+				}
+			],
+			"explorer/context": [
+				{
+					"command": "EditorConfig.generate",
+					"when": "explorerResourceIsFolder",
+					"group": "EditorConfig@1"
+				}
+			]
+		}
+	},
+	"dependencies": {
+		"editorconfig": "^0.15.0",
+		"lodash.compact": "^3.0.1",
+		"lodash.get": "^4.4.2"
+	},
+	"devDependencies": {
+		"@types/lodash": "^4.14.93",
+		"@types/mocha": "^2.2.46",
+		"@types/node": "^9.3.0",
+		"rimraf": "^2.6.2",
+		"tslint": "^5.9.1",
+		"typescript": "^2.6.2",
+		"vscode": "^1.1.10",
+		"vscode-test-utils": "0.0.9"
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"precompile": "rimraf ./out",
+		"compile": "tsc",
+		"lint": "tslint --project tsconfig.json",
+		"pretest": "npm run lint && npm run compile",
+		"test": "node ./node_modules/vscode/bin/test",
+		"vscode:prepublish": "npm run compile"
+	},
+	"__metadata": {
+		"id": "f60a60a6-95ba-42d4-b41c-3d24c1b89588",
+		"publisherId": "1ed869e4-8588-4af4-a51e-9c1c86b034b9",
+		"publisherDisplayName": "EditorConfig"
+	}
+}

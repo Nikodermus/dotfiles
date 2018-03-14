@@ -1,0 +1,26 @@
+{
+  "files.associations": {
+    "*.js": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx",
+    "html": "jsx",
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "eslint.enable": true,
+  "eslint.validate": [
+    "javascript",
+  ],
+  "eslint.run": "onSave",
+  "eslint.autoFixOnSave": true,
+  "stylelint.enable": true,
+  "css.validate": false,
+  "scss.validate": false,
+  "beautify.language": {
+    "css": [
+      "css"
+    ]
+  }
+}
