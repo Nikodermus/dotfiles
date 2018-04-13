@@ -1,8 +1,9 @@
-ditorConfig.EditorConfig
+EditorConfig.EditorConfig
 Equinusocio.vsc-material-theme
 HookyQR.beautify
 JuanBlanco.solidity
 WakaTime.vscode-wakatime
+bibhasdn.django-html
 bung87.rails
 castwide.solargraph
 dbaeumer.vscode-eslint
@@ -11,7 +12,7 @@ ionutvmi.path-autocomplete
 johnpapa.Angular2
 jundat95.react-native-snippet
 kisstkondoros.vscode-gutter-preview
-minhthai.vscode-todo-parser
+ms-python.python
 rebornix.Ruby
 robertohuertasm.vscode-icons
 sasa.vscode-sass-format
@@ -19,4 +20,4 @@ shinnn.stylelint
 sourcegraph.javascript-typescript
 spywhere.guides
 sysoev.language-stylus
-wcwhitehead.bootstrap-3-snippets
+wix.vscode-import-cost

@@ -86,6 +86,12 @@ alias coz='git cz'
 alias pushy='for i in `git remote`; do git push $i; done;'
 alias pully='for i in `git remote`; do git pull $i; done;'
 alias 3dep='git push heroku develop:master'
+alias 3bld='npm run build && serve -s build'
+alias pip='pip3'
+alias python='python3'
+alias jrun='python3 ./project/manage.py runserver'
+alias jstyl='stylus -u nib -w ./project/app/static/styl/index.styl --out ./project/app/static/css/main.css'
+
 
 function 3bra(){
   if [ "$1" -eq "" ]; then
@@ -99,6 +105,13 @@ function 3bra(){
     npm rebuild node-sass --force
     npm run start
   fi
+}
+
+function jenv(){
+  cd ~/juancasa/
+  source bin/activate
+  cd /Volumes/Macintosh\ HD/Google\ Drive/Juan\ en\ tu\ casa/Juan-en-tu-casa/
+  python3 ./project/manage.py runserver
 }
 
 

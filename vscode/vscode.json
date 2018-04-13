@@ -1,4 +1,7 @@
 {
+  "diffEditor.ignoreTrimWhitespace": true,
+  "workbench.statusBar.feedback.visible": false,
+  "typescript.experimental.syntaxFolding": true,
   "emmet.syntaxProfiles": {
     "html": {
       "filters": "bem"
@@ -12,24 +15,6 @@
   "stylelint.enable": true,
   "css.validate": false,
   "scss.validate": false,
-  "TodoParser": {
-    "folderExclude": [
-      "node_modules",
-      ".vscode",
-      ".git"
-    ],
-    "include": [
-      "js",
-      "css",
-      "scss",
-      "styl",
-      "html",
-      "ts",
-      "rb",
-      "jsx",
-      "vue"
-    ],
-  },
   "html.format.indentHandlebars": true,
   "editor.tabSize": 2,
   "emmet.showAbbreviationSuggestions": false,
@@ -684,7 +669,4 @@
     ],
     "Red" // Orphaned bracket color
   ],
-  "diffEditor.ignoreTrimWhitespace": true,
-  "editor.multiCursorModifier": "ctrlCmd",
-  "workbench.statusBar.feedback.visible": false
 }
