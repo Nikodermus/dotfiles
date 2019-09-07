@@ -1,0 +1,48 @@
+
+[alias]
+    al = add --all
+    cam = commit -am
+    cl = clone
+    cm = commit -m
+    co = checkout
+    cob = checkout -b
+    g = log --oneline --decorate --graph
+    ignore=update-index --assume-unchanged
+    l = log --pretty=format:\"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]\" --decorate
+    ld = log --pretty=format:\"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]\" --decorate --date=relative
+    lds = log --pretty=format:\"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]\" --decorate --date=short
+    ll = log --pretty=format:\"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]\" --decorate --numstat
+    pos=pull origin stage
+    s = status -sb
+    undo-commit = reset --soft HEAD^
+    unstage = reset HEAD
+[color "status"]
+    added = green
+    changed = blue
+    deleted = red
+    untracked = magenta
+[user]
+    email = nicolasm@nikodermus.media
+    name = Nicolas M. Pardo
+    username = Nikodermus
+[push]
+    default = current
+[pull]
+    default = current
+[merge]
+    tool = code
+[core]
+    editor = code
+    excludesfile = ~/.gitignore
+    whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+[web]
+    browser = firefox
+[branch]
+	autosetupmerge = true
+    merge = refs/heads/master
+    remote = origin
+[oh-my-zsh]
+	hide-dirty = 0
+[user]
+  email = nicolasm@nikodermus.media
+  name = Nicolás M. Pardo

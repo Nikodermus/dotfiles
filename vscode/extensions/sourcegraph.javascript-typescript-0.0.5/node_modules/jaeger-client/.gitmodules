@@ -1,3 +1,0 @@
-[submodule "src/jaeger-idl"]
-	path = src/jaeger-idl
-	url = https://github.com/uber/jaeger-idl.git

@@ -1,0 +1,118 @@
+{
+    "editor.fontFamily": "Fira Code",
+    "editor.fontWeight": "400",
+    "editor.fontLigatures": true,
+    "window.zoomLevel": 0,
+    "breadcrumbs.enabled": false,
+    "css.validate": false,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "editor.fontSize": 14,
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": true,
+    "editor.letterSpacing": 0.5,
+    "editor.lineHeight": 24,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all",
+    "editor.suggest.localityBonus": true,
+    "editor.wordWrap": "on",
+    "emmet.showAbbreviationSuggestions": false,
+    "eslint.autoFixOnSave": true,
+    "eslint.enable": true,
+    "eslint.run": "onSave",
+    "eslint.validate": ["javascript"],
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "extensions.ignoreRecommendations": false,
+    "files.autoSave": "onFocusChange",
+    "files.trimTrailingWhitespace": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "html.format.indentHandlebars": true,
+    "html.format.indentInnerHtml": true,
+    "html.format.maxPreserveNewLines": 1,
+    "html.format.preserveNewLines": true,
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "languageStylus.useSeparator": true,
+    "php.suggest.basic": false,
+    "problems.decorations.enabled": true,
+    "scss.validate": false,
+    "search.smartCase": true,
+    "search.useIgnoreFiles": true,
+    "terminal.integrated.rendererType": "canvas",
+    "terminal.integrated.setLocaleVariables": true,
+    "typescript.check.npmIsInstalled": false,
+    "typescript.format.insertSpaceBeforeFunctionParenthesis": false,
+    "workbench.colorTheme": "Quiet Light",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.statusBar.visible": true,
+    "emmet.includeLanguages": {
+        "javascript": "html"
+    },
+    "files.associations": {
+        ".stylelintrc": "jsonc",
+        ".eslintrc": "jsonc",
+        ".lintstagedrc": "json",
+        ".huskyrc": "json"
+    },
+    "eslint.options": {
+        "configFile": "<PATH>/.eslintrc",
+        "extensions": [".js", ".vue", ".jsx", "ts", "tsx"]
+    },
+    "bracketPairColorizer.consecutivePairColors": [
+        "[]",
+        ["#aabff9", "#88a6f6", "#5680f3"],
+        "Red"
+    ],
+    "emmet.syntaxProfiles": {
+        "html": {
+            "filters": "bem"
+        }
+    },
+    "workbench.settings.useSplitJSON": true,
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingQuotes": "always",
+    "window.menuBarVisibility": "visible",
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "window.titleBarStyle": "custom",
+    "workbench.tree.renderIndentGuides": "none",
+    "terminal.integrated.lineHeight": 1.2,
+    "prettier.tabWidth": 4,
+    "prettier.arrowParens": "always",
+    "terminal.integrated.shell.linux": "/usr/bin/zsh",
+    "emmet.triggerExpansionOnTab": true,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "eslint.packageManager": "yarn",
+    "terminal.integrated.fontFamily": "monospace",
+    "stylusSupremacy.alwaysUseZeroWithoutUnit": true,
+    "stylusSupremacy.insertBraces": false,
+    "stylusSupremacy.insertSemicolons": false,
+    "stylusSupremacy.quoteChar": "\"",
+    "stylusSupremacy.reduceMarginAndPaddingValues": true,
+    "stylusSupremacy.selectorSeparator": "\n",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.activityBar.visible": true,
+    "terminal.integrated.cursorBlinking": true,
+    "npm.packageManager": "yarn",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    }
+}
