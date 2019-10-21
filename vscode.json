@@ -1,8 +1,9 @@
 {
     "editor.fontFamily": "Fira Code",
     "editor.fontWeight": "400",
+    "vetur.format.options.tabSize": 4,
     "editor.fontLigatures": true,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "breadcrumbs.enabled": false,
     "css.validate": false,
     "diffEditor.ignoreTrimWhitespace": true,
@@ -44,7 +45,7 @@
     "terminal.integrated.setLocaleVariables": true,
     "typescript.check.npmIsInstalled": false,
     "typescript.format.insertSpaceBeforeFunctionParenthesis": false,
-    "workbench.colorTheme": "Quiet Light",
+    "workbench.colorTheme": "Panda Syntax",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.statusBar.visible": true,
@@ -52,14 +53,16 @@
         "javascript": "html"
     },
     "files.associations": {
+        "*.thor": "ruby",
+        "*.js": "javascript",
         ".stylelintrc": "jsonc",
         ".eslintrc": "jsonc",
         ".lintstagedrc": "json",
         ".huskyrc": "json"
     },
     "eslint.options": {
-        "configFile": "<PATH>/.eslintrc",
-        "extensions": [".js", ".vue", ".jsx", "ts", "tsx"]
+        "configFile": "/home/nicolas.mahecha/.eslintrc",
+        "extensions": [".js", ".vue", ".jsx"]
     },
     "bracketPairColorizer.consecutivePairColors": [
         "[]",
@@ -74,7 +77,7 @@
     "workbench.settings.useSplitJSON": true,
     "editor.autoClosingBrackets": "always",
     "editor.autoClosingQuotes": "always",
-    "window.menuBarVisibility": "visible",
+    "window.menuBarVisibility": "default",
     "[jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -114,5 +117,7 @@
     },
     "[typescriptreact]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
-    }
+    },
+    "editor.detectIndentation": false,
+    "stylusSupremacy.sortProperties": "alphabetical"
 }
