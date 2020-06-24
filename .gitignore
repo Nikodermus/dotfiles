@@ -30,3 +30,6 @@ Icon\r
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Always this
+node_modules

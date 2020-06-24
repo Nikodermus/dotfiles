@@ -1,26 +1,24 @@
 {
+    "terminal.integrated.rendererType": "experimentalWebgl",
     "editor.fontFamily": "Fira Code",
     "editor.fontWeight": "400",
-    "vetur.format.options.tabSize": 4,
     "editor.fontLigatures": true,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "breadcrumbs.enabled": false,
     "css.validate": false,
-    "diffEditor.ignoreTrimWhitespace": true,
-    "editor.fontSize": 14,
-    "editor.formatOnSave": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.fontSize": 16,
     "editor.insertSpaces": true,
     "editor.letterSpacing": 0.5,
-    "editor.lineHeight": 24,
+    "editor.lineHeight": 26,
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "all",
     "editor.suggest.localityBonus": true,
     "editor.wordWrap": "on",
     "emmet.showAbbreviationSuggestions": false,
-    "eslint.autoFixOnSave": true,
     "eslint.enable": true,
     "eslint.run": "onSave",
-    "eslint.validate": ["javascript"],
+    "eslint.validate": ["javascript", "javascriptreact"],
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "extensions.ignoreRecommendations": false,
@@ -36,63 +34,44 @@
     "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "languageStylus.useSeparator": true,
-    "php.suggest.basic": false,
+    "php.suggest.basic": true,
     "problems.decorations.enabled": true,
     "scss.validate": false,
     "search.smartCase": true,
     "search.useIgnoreFiles": true,
-    "terminal.integrated.rendererType": "canvas",
-    "terminal.integrated.setLocaleVariables": true,
     "typescript.check.npmIsInstalled": false,
     "typescript.format.insertSpaceBeforeFunctionParenthesis": false,
     "workbench.colorTheme": "Panda Syntax",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.statusBar.visible": true,
     "emmet.includeLanguages": {
         "javascript": "html"
     },
     "files.associations": {
-        "*.thor": "ruby",
-        "*.js": "javascript",
         ".stylelintrc": "jsonc",
         ".eslintrc": "jsonc",
         ".lintstagedrc": "json",
         ".huskyrc": "json"
     },
     "eslint.options": {
-        "configFile": "/home/nicolas.mahecha/.eslintrc",
-        "extensions": [".js", ".vue", ".jsx"]
+        "extensions": [".js", ".vue", ".jsx", "ts", "tsx", ".json"]
     },
     "bracketPairColorizer.consecutivePairColors": [
         "[]",
         ["#aabff9", "#88a6f6", "#5680f3"],
         "Red"
     ],
-    "emmet.syntaxProfiles": {
-        "html": {
-            "filters": "bem"
-        }
-    },
     "workbench.settings.useSplitJSON": true,
-    "editor.autoClosingBrackets": "always",
-    "editor.autoClosingQuotes": "always",
-    "window.menuBarVisibility": "default",
+    "editor.autoClosingBrackets": "beforeWhitespace",
     "[jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "window.titleBarStyle": "custom",
     "workbench.tree.renderIndentGuides": "none",
     "terminal.integrated.lineHeight": 1.2,
-    "prettier.tabWidth": 4,
-    "prettier.arrowParens": "always",
     "terminal.integrated.shell.linux": "/usr/bin/zsh",
     "emmet.triggerExpansionOnTab": true,
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "eslint.packageManager": "yarn",
-    "terminal.integrated.fontFamily": "monospace",
+    "terminal.integrated.fontFamily": "\"Lucida Console\", Monaco, monospace",
     "stylusSupremacy.alwaysUseZeroWithoutUnit": true,
     "stylusSupremacy.insertBraces": false,
     "stylusSupremacy.insertSemicolons": false,
@@ -102,13 +81,9 @@
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "workbench.activityBar.visible": true,
     "terminal.integrated.cursorBlinking": true,
     "npm.packageManager": "yarn",
     "typescript.updateImportsOnFileMove.enabled": "always",
@@ -118,6 +93,55 @@
     "[typescriptreact]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
+    "terminal.integrated.fontSize": 16,
+    "breadcrumbs.icons": false,
+    "breadcrumbs.filePath": "off",
+    "breadcrumbs.symbolPath": "off",
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single",
+    "editor.autoSurround": "languageDefined",
+    "phpserver.browser": "firefox",
+    "editor.maxTokenizationLineLength": 200000,
+    "[stylus]": {
+        "editor.defaultFormatter": "thisismanta.stylus-supremacy"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.activityBar.visible": true,
+    "workbench.statusBar.visible": true,
+    "codesnap.containerPadding": "3rem",
+    "editor.semanticHighlighting.enabled": true,
+    "codesnap.backgroundColor": "#f85888",
+    "prettier.arrowParens": "always",
+    "prettier.endOfLine": "lf",
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 4,
+    "prettier.trailingComma": "es5",
+    "editor.suggest.maxVisibleSuggestions": 5,
+    "workbench.editor.limit.value": 3,
     "editor.detectIndentation": false,
-    "stylusSupremacy.sortProperties": "alphabetical"
+    "workbench.editor.limit.enabled": true,
+    "javascript.format.semicolons": "insert",
+    "workbench.editor.limit.perEditorGroup": true,
+    "workbench.sideBar.location": "left",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "search.exclude": {
+        "**/.git": true
+    },
+    "search.sortOrder": "modified",
+    "search.useGlobalIgnoreFiles": true,
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "codesnap.boxShadow": "rgba(0, 0, 0, 0.55) 0px 5px 20px",
+    "codesnap.transparentBackground": true,
+    "prettier.disableLanguages": ["javascript", "javascriptreact"],
+    "eslint.packageManager": "npm",
+    "kite.showWelcomeNotificationOnStartup": false,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.showExecutionMessage": false,
+    "workbench.list.smoothScrolling ": true
 }

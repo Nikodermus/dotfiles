@@ -1,4 +1,3 @@
-
 [alias]
     al = add --all
     cam = commit -am
@@ -38,11 +37,8 @@
 [web]
     browser = firefox
 [branch]
-	autosetupmerge = true
+    autosetupmerge = true
     merge = refs/heads/master
     remote = origin
 [oh-my-zsh]
-	hide-dirty = 0
-[user]
-  email = nicolasm@nikodermus.media
-  name = Nicolás M. Pardo
+    hide-dirty = 0

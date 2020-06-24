@@ -1,10 +1,8 @@
 {
-    "folders": [
-        {
-            "path": "vivid-bpo"
-        }
-    ],
+    "folders": [],
     "settings": {
+        "screencastMode.onlyKeyboardShortcuts": true,
+        "window.zoomLevel": 3,
         "files.associations": {
             "*.js": "javascriptreact"
         },
@@ -18,24 +16,22 @@
         "eslint.enable": true,
         "eslint.validate": ["javascript", "javascriptreact"],
         "eslint.run": "onType",
-        "eslint.autoFixOnSave": true,
+        "source.fixAll.eslint": true,
         "stylelint.enable": true,
         "css.validate": false,
         "scss.validate": false,
         "workbench.colorCustomizations": {
             "titleBar.activeForeground": "#FFFFFF",
             "titleBar.inactiveForeground": "#FFFFFFCC",
-            "titleBar.activeBackground": "#00acc1",
-            "titleBar.inactiveBackground": "#00acc1CC"
+            "titleBar.activeBackground": "#ec2864",
+            "titleBar.inactiveBackground": "#ec2864CC"
         },
-        "window.title": "${dirty}${activeEditorShort}${separator}${folderName}${separator}VividSeats${separator}",
-        "breadcrumbs.enabled": true,
+        "window.title": "${dirty}${activeEditorShort}${separator}${folderName}${separator}deBakatas${separator}",
+        "breadcrumbs.enabled": false,
         "eslint.packageManager": "yarn",
         "prettier.eslintIntegration": true,
-        "eslint.options": {
-            "configFile": "/home/nicolas.mahecha/vs/vivid-bpo/.eslintrc",
-            "extensions": [".js", ".jsx"]
-        },
-        "eslint.lintTask.enable": true
+        "eslint.lintTask.enable": true,
+        "terminal.integrated.fontSize": 18,
+        "workbench.statusBar.visible": false
     }
 }
