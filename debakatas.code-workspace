@@ -1,37 +1,36 @@
 {
-    "folders": [],
+    "folders": [
+        {
+            "path": "../who-am-i.ui"
+        },
+        {
+            "path": "../who-am-i.api"
+        }
+    ],
     "settings": {
+        "breadcrumbs.enabled": false,
         "screencastMode.onlyKeyboardShortcuts": true,
-        "window.zoomLevel": 3,
-        "files.associations": {
-            "*.js": "javascriptreact"
-        },
-        "emmet.syntaxProfiles": {
-            "javascript": "jsx",
-            "html": "jsx"
-        },
-        "emmet.includeLanguages": {
-            "javascript": "javascriptreact"
-        },
-        "eslint.enable": true,
-        "eslint.validate": ["javascript", "javascriptreact"],
-        "eslint.run": "onType",
-        "source.fixAll.eslint": true,
-        "stylelint.enable": true,
-        "css.validate": false,
-        "scss.validate": false,
+        "terminal.integrated.fontSize": 18,
+        "window.title": "${dirty}${activeEditorShort}${separator}${folderName}${separator}deBakatas${separator}",
+        "window.zoomLevel": 2,
+        "workbench.activityBar.visible": false,
+        "workbench.statusBar.visible": false,
         "workbench.colorCustomizations": {
             "titleBar.activeForeground": "#FFFFFF",
             "titleBar.inactiveForeground": "#FFFFFFCC",
             "titleBar.activeBackground": "#ec2864",
             "titleBar.inactiveBackground": "#ec2864CC"
         },
-        "window.title": "${dirty}${activeEditorShort}${separator}${folderName}${separator}deBakatas${separator}",
-        "breadcrumbs.enabled": false,
-        "eslint.packageManager": "yarn",
-        "prettier.eslintIntegration": true,
-        "eslint.lintTask.enable": true,
-        "terminal.integrated.fontSize": 18,
-        "workbench.statusBar.visible": false
+        "editor.formatOnSave": true,
+        "[javascript]": {
+            "editor.formatOnSave": true
+        },
+        "[javascriptreact]": {
+            "editor.formatOnSave": true
+        },
+        "editor.codeActionsOnSave": {
+            "source.fixAll": true
+        },
+        "prettier.disableLanguages": ["javascript", "javascriptreact"]
     }
 }

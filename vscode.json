@@ -7,7 +7,7 @@
     "breadcrumbs.enabled": false,
     "css.validate": false,
     "diffEditor.ignoreTrimWhitespace": false,
-    "editor.fontSize": 16,
+    "editor.fontSize": 15,
     "editor.insertSpaces": true,
     "editor.letterSpacing": 0.5,
     "editor.lineHeight": 26,
@@ -51,7 +51,8 @@
         ".stylelintrc": "jsonc",
         ".eslintrc": "jsonc",
         ".lintstagedrc": "json",
-        ".huskyrc": "json"
+        ".huskyrc": "json",
+        ".postcssrc": "json"
     },
     "eslint.options": {
         "extensions": [".js", ".vue", ".jsx", "ts", "tsx", ".json"]
@@ -143,5 +144,11 @@
     "code-runner.clearPreviousOutput": true,
     "code-runner.saveAllFilesBeforeRun": true,
     "code-runner.showExecutionMessage": false,
-    "workbench.list.smoothScrolling ": true
+    "workbench.list.smoothScrolling ": true,
+    "[javascript]": {
+        "editor.formatOnSave": false
+    },
+    "[javascriptreact]": {
+        "editor.formatOnSave": false
+    }
 }
