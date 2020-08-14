@@ -1,8 +1,9 @@
 # Nikodermus uses
 
 This is a small guide for setting my mac into development, useful GUI and CLI apps, files, articles and tips to do it right from scratch.
+[Check out the video](https://www.youtube.com/watch?v=wiXjXwx1P4c) (**Spanish**) with a more in-depth explanation:
 
----
+## [![Configuración y aplicaciones para desarrolladores en macOS 2020](docs/youtube.png)](https://www.youtube.com/watch?v=wiXjXwx1P4c)
 
 ## Articles
 
