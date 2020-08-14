@@ -12,7 +12,7 @@
         "screencastMode.onlyKeyboardShortcuts": true,
         "terminal.integrated.fontSize": 18,
         "window.title": "${dirty}${activeEditorShort}${separator}${folderName}${separator}deBakatas${separator}",
-        "window.zoomLevel": 2,
+        "window.zoomLevel": 0,
         "workbench.activityBar.visible": false,
         "workbench.statusBar.visible": false,
         "workbench.colorCustomizations": {

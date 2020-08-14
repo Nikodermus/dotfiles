@@ -41,13 +41,18 @@ alias admin="/Users/nikodermus/sentry/admin"
 alias auth="/Users/nikodermus/sentry/auth"
 alias file="/Users/nikodermus/sentry/file"
 alias forms="/Users/nikodermus/sentry/forms"
+alias gateway="/Users/nikodermus/sentry/gateway"
 alias linter="/Users/nikodermus/sentry/linter"
 alias portal="/Users/nikodermus/sentry/portal"
 alias postman="/Users/nikodermus/sentry/postman"
 alias schedule="/Users/nikodermus/sentry/schedule"
 
+# Front Apps
+alias portal.ui="/Users/nikodermus/sentry/portal.ui"
+alias schedule.ui="/Users/nikodermus/sentry/schedule.ui"
+
 declare -a sentryprojects
-sentryprojects=(admin auth file forms linter portal postman schedule)
+sentryprojects=(admin auth file forms gateway linter portal postman schedule schedule.ui portal.ui)
 
 # Sentry Commands
 function back-to-dev(){
@@ -86,14 +91,14 @@ declare -a ac_students=(
     "Daniel"
     "Diana"
     "Giorgio"
-    "Juan Jose"
-    "Juan Sebastian"
+    "Juanjo"
+    "Juanse"
     "Laura"
     "Leo"
     "Lina"
     "Maco"
-    "Natalia"
-    "Paola"
+    "Nata"
+    "Pao"
 )
 
 function ar() {
