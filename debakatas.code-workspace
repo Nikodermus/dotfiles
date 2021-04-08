@@ -1,10 +1,49 @@
 {
     "folders": [
         {
-            "path": "../who-am-i.ui"
+            "path": "../javascript-basics"
         },
         {
-            "path": "../who-am-i.api"
+            "path": "../git-basics"
+        },
+        {
+            "path": "../javascript-basics/tools"
+        },
+        {
+            "path": "../javascript-basics/tools2"
+        },
+        {
+            "path": "../clase-de-hoy"
+        },
+        {
+            "path": "../parcel-template"
+        },
+        {
+            "path": "../js-prototipos"
+        },
+        {
+            "path": "../promises"
+        },
+        {
+            "path": "../dnd-vainilla-js"
+        },
+        {
+            "path": "../testing"
+        },
+        {
+            "path": "../svelte-debakatas"
+        },
+        {
+            "path": "../sveltest"
+        },
+        {
+            "path": "../musivelt"
+        },
+        {
+            "path": "../sweather"
+        },
+        {
+            "path": "../super-duper-dollop"
         }
     ],
     "settings": {
@@ -12,7 +51,7 @@
         "screencastMode.onlyKeyboardShortcuts": true,
         "terminal.integrated.fontSize": 18,
         "window.title": "${dirty}${activeEditorShort}${separator}${folderName}${separator}deBakatas${separator}",
-        "window.zoomLevel": 0,
+        "window.zoomLevel": 2,
         "workbench.activityBar.visible": false,
         "workbench.statusBar.visible": false,
         "workbench.colorCustomizations": {
@@ -31,6 +70,7 @@
         "editor.codeActionsOnSave": {
             "source.fixAll": true
         },
-        "prettier.disableLanguages": ["javascript", "javascriptreact"]
+        "prettier.disableLanguages": ["javascript", "javascriptreact"],
+        "liveServer.settings.multiRootWorkspaceName": "npm"
     }
 }

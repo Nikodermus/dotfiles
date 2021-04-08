@@ -3,7 +3,6 @@
     "editor.fontFamily": "Fira Code",
     "editor.fontWeight": "400",
     "editor.fontLigatures": true,
-    "window.zoomLevel": 0,
     "breadcrumbs.enabled": false,
     "css.validate": false,
     "diffEditor.ignoreTrimWhitespace": false,
@@ -16,7 +15,6 @@
     "editor.suggest.localityBonus": true,
     "editor.wordWrap": "on",
     "emmet.showAbbreviationSuggestions": false,
-    "eslint.enable": true,
     "eslint.run": "onSave",
     "eslint.validate": ["javascript", "javascriptreact"],
     "explorer.confirmDelete": false,
@@ -45,14 +43,16 @@
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "newUntitledFile",
     "emmet.includeLanguages": {
-        "javascript": "html"
+        "javascript": "html",
+        "svelte": "html"
     },
     "files.associations": {
         ".stylelintrc": "jsonc",
         ".eslintrc": "jsonc",
         ".lintstagedrc": "json",
         ".huskyrc": "json",
-        ".postcssrc": "json"
+        ".postcssrc": "json",
+        ".czrc": "json"
     },
     "eslint.options": {
         "extensions": [".js", ".vue", ".jsx", "ts", "tsx", ".json"]
@@ -107,7 +107,7 @@
         "editor.defaultFormatter": "thisismanta.stylus-supremacy"
     },
     "[vue]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "octref.vetur"
     },
     "workbench.activityBar.visible": true,
     "workbench.statusBar.visible": true,
@@ -119,9 +119,7 @@
     "prettier.singleQuote": true,
     "prettier.tabWidth": 4,
     "prettier.trailingComma": "es5",
-    "editor.suggest.maxVisibleSuggestions": 5,
     "workbench.editor.limit.value": 3,
-    "editor.detectIndentation": false,
     "workbench.editor.limit.enabled": true,
     "javascript.format.semicolons": "insert",
     "workbench.editor.limit.perEditorGroup": true,
@@ -138,7 +136,6 @@
     "terminal.integrated.shell.osx": "/bin/zsh",
     "codesnap.boxShadow": "rgba(0, 0, 0, 0.55) 0px 5px 20px",
     "codesnap.transparentBackground": true,
-    "prettier.disableLanguages": ["javascript", "javascriptreact"],
     "eslint.packageManager": "npm",
     "kite.showWelcomeNotificationOnStartup": false,
     "code-runner.clearPreviousOutput": true,
@@ -146,9 +143,26 @@
     "code-runner.showExecutionMessage": false,
     "workbench.list.smoothScrolling ": true,
     "[javascript]": {
-        "editor.formatOnSave": false
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[javascriptreact]": {
-        "editor.formatOnSave": false
-    }
+        "editor.formatOnSave": true
+    },
+    "scm.alwaysShowRepositories": true,
+    "files.saveConflictResolution": "overwriteFileOnDisk",
+    "cloudcode.gke": {
+        "projectIds": ["sentry-health-sandbox"]
+    },
+    "kite.codefinder.enableLineDecoration": false,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "workbench.editor.decorations.badges": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "workbench.editor.decorations.colors": false,
+    "debug.showInlineBreakpointCandidates": false
 }
