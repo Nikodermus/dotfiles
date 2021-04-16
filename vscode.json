@@ -164,5 +164,6 @@
     "workbench.editor.decorations.badges": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "workbench.editor.decorations.colors": false,
-    "debug.showInlineBreakpointCandidates": false
+    "debug.showInlineBreakpointCandidates": false,
+    "workbench.welcomePage.hiddenCategories": ["Setup", "Beginner"]
 }
